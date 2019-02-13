@@ -59,7 +59,8 @@ Micro Services :
     Make a Rest Call follows 
     
     
-    http://localhost:8765/api/dept/org/dept/     --> Make call with Zuul URL that will be routed to  Eureka -> Department Or Employer Service
+    http://localhost:8765/api/dept/org/dept/     --> Make call with Zuul URL that will be routed to 
+    Eureka -> Department Or Employer Service
     
     
           [
