@@ -27,7 +27,7 @@ public class EmployeeController {
 	@Autowired
 	EmplomentService emplomentService;
 
-	//@GetMapping("/org/dept/{deptNo}/employee")
+	//@GetMapping("/org/dept/{deptNo}/employee", produces=MediaType.APPLICATION_JSON_VALUE)
 	@RequestMapping(value = "/org/dept/{deptNo}/employee", method = RequestMethod.GET, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<Map> getAllEmployees(@PathVariable String deptNo) {
@@ -41,7 +41,7 @@ public class EmployeeController {
 	
 	
 	
-	//@PostMapping("org/dept/{deptNo}/employee")
+	//@PostMapping("org/dept/{deptNo}/employee", produces=)
 	@RequestMapping(value="/org/dept/{deptNo}/employee", method=RequestMethod.POST, produces= {
 			MediaType.APPLICATION_JSON_VALUE
 	})
